@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
 import ComponentsScreen from './src/screens/ComponentsScreen';
 import ListScreen from './src/screens/ListScreen';
+import ImageScreen from './src/screens/ImageScreen';
 
 // const navigator = createStackNavigator(
 //   {
@@ -42,6 +43,12 @@ function App() {
           name="List" 
           component={ListScreen}
           options={{title: 'List',
+          headerTitleAlign: 'center'}} 
+        />
+        <Stack.Screen 
+          name="Image" 
+          component={ImageScreen}
+          options={{title: 'Image',
           headerTitleAlign: 'center'}} 
         />
       </Stack.Navigator>
